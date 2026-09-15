@@ -1,0 +1,1039 @@
+[
+  {
+    "id": 1,
+    "quote": "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+    "author": "Albert Einstein",
+    "category": "Science",
+    "tags": [
+      "imagination",
+      "knowledge"
+    ]
+  },
+  {
+    "id": 2,
+    "quote": "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+    "author": "Marie Curie",
+    "category": "Science",
+    "tags": [
+      "fear",
+      "knowledge",
+      "discovery"
+    ]
+  },
+  {
+    "id": 3,
+    "quote": "Somewhere, something incredible is waiting to be known.",
+    "author": "Carl Sagan",
+    "category": "Science",
+    "tags": [
+      "wonder",
+      "universe",
+      "discovery"
+    ]
+  },
+  {
+    "id": 4,
+    "quote": "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.",
+    "author": "Stephen Hawking",
+    "category": "Science",
+    "tags": [
+      "curiosity",
+      "stars",
+      "universe"
+    ]
+  },
+  {
+    "id": 5,
+    "quote": "Equipped with his five senses, man explores the universe around him and calls the adventure Science.",
+    "author": "Edwin Hubble",
+    "category": "Science",
+    "tags": [
+      "exploration",
+      "adventure"
+    ]
+  },
+  {
+    "id": 6,
+    "quote": "If I have seen further, it is by standing on the shoulders of giants.",
+    "author": "Isaac Newton",
+    "category": "Science",
+    "tags": [
+      "humility",
+      "progress"
+    ]
+  },
+  {
+    "id": 7,
+    "quote": "Science is not only a disciple of reason but also one of romance and passion.",
+    "author": "Stephen Hawking",
+    "category": "Science",
+    "tags": [
+      "passion",
+      "reason"
+    ]
+  },
+  {
+    "id": 8,
+    "quote": "The good thing about science is that it's true whether or not you believe in it.",
+    "author": "Neil deGrasse Tyson",
+    "category": "Science",
+    "tags": [
+      "truth",
+      "facts"
+    ]
+  },
+  {
+    "id": 9,
+    "quote": "In questions of science, the authority of a thousand is not worth the humble reasoning of a single individual.",
+    "author": "Galileo Galilei",
+    "category": "Science",
+    "tags": [
+      "truth",
+      "reason",
+      "authority"
+    ]
+  },
+  {
+    "id": 10,
+    "quote": "What we know is a drop, what we don't know is an ocean.",
+    "author": "Isaac Newton",
+    "category": "Science",
+    "tags": [
+      "humility",
+      "wisdom"
+    ]
+  },
+  {
+    "id": 11,
+    "quote": "We can only see a short distance ahead, but we can see plenty there that needs to be done.",
+    "author": "Alan Turing",
+    "category": "Technology",
+    "tags": [
+      "future",
+      "progress",
+      "ai"
+    ]
+  },
+  {
+    "id": 12,
+    "quote": "The question of whether computers can think is like the question of whether submarines can swim.",
+    "author": "Edsger W. Dijkstra",
+    "category": "Technology",
+    "tags": [
+      "computing",
+      "ai",
+      "philosophy"
+    ]
+  },
+  {
+    "id": 13,
+    "quote": "The best way to predict the future is to invent it.",
+    "author": "Alan Kay",
+    "category": "Technology",
+    "tags": [
+      "innovation",
+      "future"
+    ]
+  },
+  {
+    "id": 14,
+    "quote": "Any sufficiently advanced technology is indistinguishable from magic.",
+    "author": "Arthur C. Clarke",
+    "category": "Technology",
+    "tags": [
+      "magic",
+      "innovation"
+    ]
+  },
+  {
+    "id": 15,
+    "quote": "The computer was born to solve problems that did not exist before.",
+    "author": "Bill Gates",
+    "category": "Technology",
+    "tags": [
+      "computers",
+      "problems"
+    ]
+  },
+  {
+    "id": 16,
+    "quote": "Technology is best when it brings people together.",
+    "author": "Matt Mullenweg",
+    "category": "Technology",
+    "tags": [
+      "community",
+      "connection"
+    ]
+  },
+  {
+    "id": 17,
+    "quote": "Programs must be written for people to read, and only incidentally for machines to execute.",
+    "author": "Harold Abelson",
+    "category": "Technology",
+    "tags": [
+      "programming",
+      "code",
+      "clarity"
+    ]
+  },
+  {
+    "id": 18,
+    "quote": "Talk is cheap. Show me the code.",
+    "author": "Linus Torvalds",
+    "category": "Technology",
+    "tags": [
+      "action",
+      "programming"
+    ]
+  },
+  {
+    "id": 19,
+    "quote": "It's not that we use technology, we live technology.",
+    "author": "Godfrey Reggio",
+    "category": "Technology",
+    "tags": [
+      "society",
+      "modern"
+    ]
+  },
+  {
+    "id": 20,
+    "quote": "Simplicity is prerequisite for reliability.",
+    "author": "Edsger W. Dijkstra",
+    "category": "Technology",
+    "tags": [
+      "simplicity",
+      "engineering"
+    ]
+  },
+  {
+    "id": 21,
+    "quote": "The unexamined life is not worth living.",
+    "author": "Socrates",
+    "category": "Philosophy",
+    "tags": [
+      "reflection",
+      "life"
+    ]
+  },
+  {
+    "id": 22,
+    "quote": "Happiness is not something ready made. It comes from your own actions.",
+    "author": "Dalai Lama",
+    "category": "Wisdom",
+    "tags": [
+      "happiness",
+      "action"
+    ]
+  },
+  {
+    "id": 23,
+    "quote": "He who has a why to live can bear almost any how.",
+    "author": "Friedrich Nietzsche",
+    "category": "Philosophy",
+    "tags": [
+      "purpose",
+      "resilience"
+    ]
+  },
+  {
+    "id": 24,
+    "quote": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+    "author": "Aristotle",
+    "category": "Philosophy",
+    "tags": [
+      "habit",
+      "excellence"
+    ]
+  },
+  {
+    "id": 25,
+    "quote": "Waste no more time arguing what a good man should be. Be one.",
+    "author": "Marcus Aurelius",
+    "category": "Philosophy",
+    "tags": [
+      "stoicism",
+      "character",
+      "action"
+    ]
+  },
+  {
+    "id": 26,
+    "quote": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "category": "Philosophy",
+    "tags": [
+      "humility",
+      "wisdom"
+    ]
+  },
+  {
+    "id": 27,
+    "quote": "Knowing yourself is the beginning of all wisdom.",
+    "author": "Aristotle",
+    "category": "Wisdom",
+    "tags": [
+      "self-knowledge",
+      "wisdom"
+    ]
+  },
+  {
+    "id": 28,
+    "quote": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+    "author": "Marcus Aurelius",
+    "category": "Philosophy",
+    "tags": [
+      "stoicism",
+      "strength",
+      "mind"
+    ]
+  },
+  {
+    "id": 29,
+    "quote": "In the depth of winter, I finally learned that within me there lay an invincible summer.",
+    "author": "Albert Camus",
+    "category": "Philosophy",
+    "tags": [
+      "resilience",
+      "inner strength"
+    ]
+  },
+  {
+    "id": 30,
+    "quote": "I think, therefore I am.",
+    "author": "René Descartes",
+    "category": "Philosophy",
+    "tags": [
+      "existence",
+      "thought"
+    ]
+  },
+  {
+    "id": 31,
+    "quote": "Life is really simple, but we insist on making it complicated.",
+    "author": "Confucius",
+    "category": "Wisdom",
+    "tags": [
+      "simplicity",
+      "life"
+    ]
+  },
+  {
+    "id": 32,
+    "quote": "Silence is a source of great strength.",
+    "author": "Lao Tzu",
+    "category": "Wisdom",
+    "tags": [
+      "peace",
+      "strength",
+      "mindfulness"
+    ]
+  },
+  {
+    "id": 33,
+    "quote": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "category": "Leadership",
+    "tags": [
+      "perseverance",
+      "hope"
+    ]
+  },
+  {
+    "id": 34,
+    "quote": "Be the change that you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "category": "Leadership",
+    "tags": [
+      "change",
+      "integrity"
+    ]
+  },
+  {
+    "id": 35,
+    "quote": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+    "author": "Martin Luther King Jr.",
+    "category": "Leadership",
+    "tags": [
+      "justice",
+      "courage"
+    ]
+  },
+  {
+    "id": 36,
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "category": "Leadership",
+    "tags": [
+      "courage",
+      "perseverance"
+    ]
+  },
+  {
+    "id": 37,
+    "quote": "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.",
+    "author": "Martin Luther King Jr.",
+    "category": "Leadership",
+    "tags": [
+      "love",
+      "peace",
+      "light"
+    ]
+  },
+  {
+    "id": 38,
+    "quote": "A leader is one who knows the way, goes the way, and shows the way.",
+    "author": "John C. Maxwell",
+    "category": "Leadership",
+    "tags": [
+      "guidance",
+      "integrity"
+    ]
+  },
+  {
+    "id": 39,
+    "quote": "Do not follow where the path may lead. Go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Leadership",
+    "tags": [
+      "trailblazer",
+      "originality"
+    ]
+  },
+  {
+    "id": 40,
+    "quote": "Courage is what it takes to stand up and speak; courage is also what it takes to sit down and listen.",
+    "author": "Winston Churchill",
+    "category": "Leadership",
+    "tags": [
+      "courage",
+      "listening"
+    ]
+  },
+  {
+    "id": 41,
+    "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "author": "Nelson Mandela",
+    "category": "Leadership",
+    "tags": [
+      "resilience",
+      "triumph"
+    ]
+  },
+  {
+    "id": 42,
+    "quote": "The measure of a man is what he does with power.",
+    "author": "Plato",
+    "category": "Leadership",
+    "tags": [
+      "power",
+      "character"
+    ]
+  },
+  {
+    "id": 43,
+    "quote": "Real leadership stems from individuality, awkwardly expressed perhaps, but personal.",
+    "author": "Paul Wellstone",
+    "category": "Leadership",
+    "tags": [
+      "authenticity",
+      "leadership"
+    ]
+  },
+  {
+    "id": 44,
+    "quote": "If your actions inspire others to dream more, learn more, do more and become more, you are a leader.",
+    "author": "John Quincy Adams",
+    "category": "Leadership",
+    "tags": [
+      "inspiration",
+      "service"
+    ]
+  },
+  {
+    "id": 45,
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Inspiration",
+    "tags": [
+      "passion",
+      "work",
+      "greatness"
+    ]
+  },
+  {
+    "id": 46,
+    "quote": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Inspiration",
+    "tags": [
+      "belief",
+      "confidence"
+    ]
+  },
+  {
+    "id": 47,
+    "quote": "Your time is limited, so don't waste it living someone else's life.",
+    "author": "Steve Jobs",
+    "category": "Inspiration",
+    "tags": [
+      "authenticity",
+      "life",
+      "time"
+    ]
+  },
+  {
+    "id": 48,
+    "quote": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "category": "Inspiration",
+    "tags": [
+      "initiative",
+      "risk",
+      "opportunity"
+    ]
+  },
+  {
+    "id": 49,
+    "quote": "Whether you think you can or you think you can't, you're right.",
+    "author": "Henry Ford",
+    "category": "Inspiration",
+    "tags": [
+      "mindset",
+      "attitude"
+    ]
+  },
+  {
+    "id": 50,
+    "quote": "The future belongs to those who believe in the beauty of their dreams.",
+    "author": "Eleanor Roosevelt",
+    "category": "Inspiration",
+    "tags": [
+      "dreams",
+      "hope",
+      "future"
+    ]
+  },
+  {
+    "id": 51,
+    "quote": "I have not failed. I've just found 10,000 ways that won't work.",
+    "author": "Thomas A. Edison",
+    "category": "Inspiration",
+    "tags": [
+      "persistence",
+      "invention"
+    ]
+  },
+  {
+    "id": 52,
+    "quote": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis",
+    "category": "Inspiration",
+    "tags": [
+      "adversity",
+      "destiny"
+    ]
+  },
+  {
+    "id": 53,
+    "quote": "Start where you are. Use what you have. Do what you can.",
+    "author": "Arthur Ashe",
+    "category": "Inspiration",
+    "tags": [
+      "action",
+      "resourcefulness"
+    ]
+  },
+  {
+    "id": 54,
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "Inspiration",
+    "tags": [
+      "impact",
+      "belief"
+    ]
+  },
+  {
+    "id": 55,
+    "quote": "Everything you've ever wanted is on the other side of fear.",
+    "author": "George Addair",
+    "category": "Inspiration",
+    "tags": [
+      "fear",
+      "growth"
+    ]
+  },
+  {
+    "id": 56,
+    "quote": "Opportunities don't happen, you create them.",
+    "author": "Chris Grosser",
+    "category": "Inspiration",
+    "tags": [
+      "opportunity",
+      "initiative"
+    ]
+  },
+  {
+    "id": 57,
+    "quote": "Don't count the days, make the days count.",
+    "author": "Muhammad Ali",
+    "category": "Inspiration",
+    "tags": [
+      "time",
+      "purpose"
+    ]
+  },
+  {
+    "id": 58,
+    "quote": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "category": "Inspiration",
+    "tags": [
+      "action",
+      "start"
+    ]
+  },
+  {
+    "id": 59,
+    "quote": "You can never get a cup of tea large enough or a book long enough to suit me.",
+    "author": "C.S. Lewis",
+    "category": "Literature",
+    "tags": [
+      "reading",
+      "books",
+      "comfort"
+    ]
+  },
+  {
+    "id": 60,
+    "quote": "There is no friend as loyal as a book.",
+    "author": "Ernest Hemingway",
+    "category": "Literature",
+    "tags": [
+      "books",
+      "friendship"
+    ]
+  },
+  {
+    "id": 61,
+    "quote": "Not all those who wander are lost.",
+    "author": "J.R.R. Tolkien",
+    "category": "Literature",
+    "tags": [
+      "journey",
+      "discovery",
+      "adventure"
+    ]
+  },
+  {
+    "id": 62,
+    "quote": "I have loved the stars too fondly to be fearful of the night.",
+    "author": "Sarah Williams",
+    "category": "Literature",
+    "tags": [
+      "courage",
+      "stars",
+      "beauty"
+    ]
+  },
+  {
+    "id": 63,
+    "quote": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Life",
+    "tags": [
+      "authenticity",
+      "identity"
+    ]
+  },
+  {
+    "id": 64,
+    "quote": "The two most important days in your life are the day you are born and the day you find out why.",
+    "author": "Mark Twain",
+    "category": "Life",
+    "tags": [
+      "purpose",
+      "meaning"
+    ]
+  },
+  {
+    "id": 65,
+    "quote": "In three words I can sum up everything I've learned about life: it goes on.",
+    "author": "Robert Frost",
+    "category": "Life",
+    "tags": [
+      "resilience",
+      "time"
+    ]
+  },
+  {
+    "id": 66,
+    "quote": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "category": "Life",
+    "tags": [
+      "practicality",
+      "action"
+    ]
+  },
+  {
+    "id": 67,
+    "quote": "We do not remember days, we remember moments.",
+    "author": "Cesare Pavese",
+    "category": "Life",
+    "tags": [
+      "memories",
+      "mindfulness"
+    ]
+  },
+  {
+    "id": 68,
+    "quote": "Life is what happens when you're busy making other plans.",
+    "author": "John Lennon",
+    "category": "Life",
+    "tags": [
+      "presence",
+      "spontaneity"
+    ]
+  },
+  {
+    "id": 69,
+    "quote": "Words are, in my not-so-humble opinion, our most inexhaustible source of magic.",
+    "author": "J.K. Rowling",
+    "category": "Literature",
+    "tags": [
+      "words",
+      "magic",
+      "imagination"
+    ]
+  },
+  {
+    "id": 70,
+    "quote": "So many books, so little time.",
+    "author": "Frank Zappa",
+    "category": "Literature",
+    "tags": [
+      "books",
+      "reading",
+      "time"
+    ]
+  },
+  {
+    "id": 71,
+    "quote": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+    "author": "Mark Twain",
+    "category": "Life",
+    "tags": [
+      "independent thinking",
+      "wisdom"
+    ]
+  },
+  {
+    "id": 72,
+    "quote": "There is nothing either good or bad, but thinking makes it so.",
+    "author": "William Shakespeare",
+    "category": "Literature",
+    "tags": [
+      "perspective",
+      "mind"
+    ]
+  },
+  {
+    "id": 73,
+    "quote": "Every child is an artist. The problem is how to remain an artist once he grows up.",
+    "author": "Pablo Picasso",
+    "category": "Art",
+    "tags": [
+      "creativity",
+      "youth",
+      "expression"
+    ]
+  },
+  {
+    "id": 74,
+    "quote": "Creativity takes courage.",
+    "author": "Henri Matisse",
+    "category": "Art",
+    "tags": [
+      "courage",
+      "creativity"
+    ]
+  },
+  {
+    "id": 75,
+    "quote": "Art washes away from the soul the dust of everyday life.",
+    "author": "Pablo Picasso",
+    "category": "Art",
+    "tags": [
+      "soul",
+      "renewal",
+      "beauty"
+    ]
+  },
+  {
+    "id": 76,
+    "quote": "You don't make a photograph just with a camera. You bring to the act of photography all the pictures you have seen, the books you have read, the music you have heard, the people you have loved.",
+    "author": "Ansel Adams",
+    "category": "Art",
+    "tags": [
+      "perspective",
+      "photography",
+      "experience"
+    ]
+  },
+  {
+    "id": 77,
+    "quote": "The artist is nothing without the gift, but the gift is nothing without work.",
+    "author": "Émile Zola",
+    "category": "Art",
+    "tags": [
+      "discipline",
+      "talent",
+      "work"
+    ]
+  },
+  {
+    "id": 78,
+    "quote": "Creativity is intelligence having fun.",
+    "author": "Albert Einstein",
+    "category": "Art",
+    "tags": [
+      "intelligence",
+      "fun",
+      "creativity"
+    ]
+  },
+  {
+    "id": 79,
+    "quote": "Have no fear of perfection - you'll never reach it.",
+    "author": "Salvador Dalí",
+    "category": "Art",
+    "tags": [
+      "perfectionism",
+      "acceptance"
+    ]
+  },
+  {
+    "id": 80,
+    "quote": "If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced.",
+    "author": "Vincent van Gogh",
+    "category": "Art",
+    "tags": [
+      "courage",
+      "inner critic",
+      "expression"
+    ]
+  },
+  {
+    "id": 81,
+    "quote": "To create one's own world in any of the arts takes courage.",
+    "author": "Georgia O'Keeffe",
+    "category": "Art",
+    "tags": [
+      "courage",
+      "vision",
+      "originality"
+    ]
+  },
+  {
+    "id": 82,
+    "quote": "Art enables us to find ourselves and lose ourselves at the same time.",
+    "author": "Thomas Merton",
+    "category": "Art",
+    "tags": [
+      "discovery",
+      "identity"
+    ]
+  },
+  {
+    "id": 83,
+    "quote": "Music is the universal language of mankind.",
+    "author": "Henry Wadsworth Longfellow",
+    "category": "Art",
+    "tags": [
+      "music",
+      "connection",
+      "expression"
+    ]
+  },
+  {
+    "id": 84,
+    "quote": "Great things are done by a series of small things brought together.",
+    "author": "Vincent van Gogh",
+    "category": "Art",
+    "tags": [
+      "details",
+      "perseverance",
+      "greatness"
+    ]
+  },
+  {
+    "id": 85,
+    "quote": "Colour is the keyboard, the eyes are the hammers, the soul is the piano with many strings.",
+    "author": "Wassily Kandinsky",
+    "category": "Art",
+    "tags": [
+      "color",
+      "soul",
+      "sensory"
+    ]
+  },
+  {
+    "id": 86,
+    "quote": "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+    "author": "Maya Angelou",
+    "category": "Wisdom",
+    "tags": [
+      "empathy",
+      "kindness",
+      "humanity"
+    ]
+  },
+  {
+    "id": 87,
+    "quote": "There is no greater agony than bearing an untold story inside you.",
+    "author": "Maya Angelou",
+    "category": "Literature",
+    "tags": [
+      "expression",
+      "storytelling"
+    ]
+  },
+  {
+    "id": 88,
+    "quote": "We may encounter many defeats but we must not be defeated.",
+    "author": "Maya Angelou",
+    "category": "Inspiration",
+    "tags": [
+      "resilience",
+      "strength"
+    ]
+  },
+  {
+    "id": 89,
+    "quote": "No act of kindness, no matter how small, is ever wasted.",
+    "author": "Aesop",
+    "category": "Wisdom",
+    "tags": [
+      "kindness",
+      "generosity"
+    ]
+  },
+  {
+    "id": 90,
+    "quote": "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
+    "author": "Mother Teresa",
+    "category": "Wisdom",
+    "tags": [
+      "love",
+      "kindness",
+      "compassion"
+    ]
+  },
+  {
+    "id": 91,
+    "quote": "Peace begins with a smile.",
+    "author": "Mother Teresa",
+    "category": "Wisdom",
+    "tags": [
+      "peace",
+      "joy"
+    ]
+  },
+  {
+    "id": 92,
+    "quote": "The purpose of human life is to serve, and to show compassion and the will to help others.",
+    "author": "Albert Schweitzer",
+    "category": "Wisdom",
+    "tags": [
+      "service",
+      "compassion"
+    ]
+  },
+  {
+    "id": 93,
+    "quote": "When we are no longer able to change a situation, we are challenged to change ourselves.",
+    "author": "Viktor E. Frankl",
+    "category": "Philosophy",
+    "tags": [
+      "growth",
+      "adaptation",
+      "resilience"
+    ]
+  },
+  {
+    "id": 94,
+    "quote": "Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude in any given set of circumstances.",
+    "author": "Viktor E. Frankl",
+    "category": "Philosophy",
+    "tags": [
+      "freedom",
+      "attitude",
+      "dignity"
+    ]
+  },
+  {
+    "id": 95,
+    "quote": "An unexamined idea is not worth holding.",
+    "author": "Bertrand Russell",
+    "category": "Philosophy",
+    "tags": [
+      "critical thinking",
+      "reason"
+    ]
+  },
+  {
+    "id": 96,
+    "quote": "You cannot shake hands with a clenched fist.",
+    "author": "Indira Gandhi",
+    "category": "Leadership",
+    "tags": [
+      "peace",
+      "dialogue",
+      "openness"
+    ]
+  },
+  {
+    "id": 97,
+    "quote": "Forgiveness is the attribute of the strong.",
+    "author": "Mahatma Gandhi",
+    "category": "Wisdom",
+    "tags": [
+      "forgiveness",
+      "strength"
+    ]
+  },
+  {
+    "id": 98,
+    "quote": "A warm smile is the universal language of kindness.",
+    "author": "William Arthur Ward",
+    "category": "Wisdom",
+    "tags": [
+      "kindness",
+      "warmth"
+    ]
+  },
+  {
+    "id": 99,
+    "quote": "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+    "author": "Mahatma Gandhi",
+    "category": "Wisdom",
+    "tags": [
+      "learning",
+      "life",
+      "mindfulness"
+    ]
+  },
+  {
+    "id": 100,
+    "quote": "To understand everything is to forgive everything.",
+    "author": "Leo Tolstoy",
+    "category": "Literature",
+    "tags": [
+      "compassion",
+      "understanding",
+      "forgiveness"
+    ]
+  }
+]

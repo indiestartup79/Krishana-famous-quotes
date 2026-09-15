@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quoteverse | 100 Well-Known Quotes</title>
+  <meta name="description" content="Discover 100 well-known quotes with instant search, category filtering, and random quote generation.">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-icon">✨</span>
+        <div class="brand-text">
+          <h1>Quoteverse</h1>
+          <p class="tagline">Explore 100 Timeless Words of Wisdom</p>
+        </div>
+      </div>
+      <div class="header-stats" id="header-stats">
+        <span class="badge badge-outline">100 Quotes</span>
+        <span class="badge badge-outline" id="categories-count-badge">9 Categories</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero: Random Quote Display -->
+      <section class="hero-section" aria-label="Featured Random Quote">
+        <div class="hero-card" id="hero-card">
+          <div class="quote-watermark" aria-hidden="true">“</div>
+          <div class="card-header">
+            <span class="category-pill" id="hero-category">Wisdom</span>
+            <span class="quote-id-tag" id="hero-quote-id">Quote #1</span>
+          </div>
+
+          <blockquote class="hero-quote-body">
+            <p id="hero-text">"Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."</p>
+          </blockquote>
+
+          <div class="hero-author-row">
+            <div class="author-info">
+              <span class="author-dash">—</span>
+              <span class="author-name" id="hero-author">Albert Einstein</span>
+            </div>
+            <div class="tag-list" id="hero-tags"></div>
+          </div>
+
+          <div class="card-actions">
+            <button type="button" class="btn btn-primary" id="btn-next-random" title="Fetch a new random quote (or press Space)">
+              <span class="btn-icon">🎲</span>
+              <span>New Quote</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="btn-copy-quote" title="Copy quote to clipboard">
+              <span class="btn-icon">📋</span>
+              <span id="copy-btn-text">Copy</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="btn-share-twitter" title="Share on Twitter / X">
+              <span class="btn-icon">🐦</span>
+              <span>Share</span>
+            </button>
+          </div>
+          <div class="keyboard-tip">
+            <span>Tip: Press <kbd>Space</kbd> anywhere for another random quote</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Search & Filters Section -->
+      <section class="filters-section" aria-label="Search and filter quotes">
+        <div class="section-title-row">
+          <h2>Browse & Search Quotes</h2>
+          <span class="results-badge" id="results-count">Showing 100 quotes</span>
+        </div>
+
+        <div class="search-bar-wrapper">
+          <div class="search-input-group">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+            <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Search by quote text or author name (e.g. Einstein, Jobs, wisdom)..." 
+              aria-label="Search quotes"
+              autocomplete="off"
+            />
+            <button type="button" id="clear-search-btn" class="clear-btn" aria-label="Clear search" hidden>&times;</button>
+          </div>
+
+          <div class="filter-dropdowns">
+            <div class="select-group">
+              <label for="author-select">Author:</label>
+              <select id="author-select">
+                <option value="">All Authors</option>
+              </select>
+            </div>
+
+            <button type="button" class="btn btn-ghost" id="btn-reset-filters" title="Reset all filters">
+              ↺ Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="category-pills-container" id="category-pills-container" role="radiogroup" aria-label="Category filters">
+          <button type="button" class="cat-chip active" data-category="all" role="radio" aria-checked="true">
+            All <span class="chip-count">(100)</span>
+          </button>
+          <!-- Dynamic Category Pills injected by app.js -->
+        </div>
+      </section>
+
+      <!-- Quotes Grid / List -->
+      <section class="quotes-grid-section" aria-label="Search Results">
+        <div class="grid-toolbar">
+          <span id="active-filter-summary">All Categories</span>
+          <button type="button" class="btn btn-sm btn-outline" id="btn-random-from-results" title="Pick a random quote from the current filtered results">
+            🎲 Random from Results
+          </button>
+        </div>
+
+        <div class="quotes-grid" id="quotes-grid">
+          <!-- Cards rendered dynamically by app.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-icon">🔎</div>
+          <h3>No matching quotes found</h3>
+          <p>Try searching for a different keyword, clearing author filter, or choosing another category.</p>
+          <button type="button" class="btn btn-primary" id="btn-clear-all-empty">Clear All Filters</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>Quoteverse &bull; 100 Inspiring Quotes Built with Flask, HTML &amp; Vanilla JavaScript</p>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">Quote copied to clipboard!</div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
