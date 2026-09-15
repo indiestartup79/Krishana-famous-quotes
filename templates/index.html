@@ -117,9 +117,14 @@
       <section class="quotes-grid-section" aria-label="Search Results">
         <div class="grid-toolbar">
           <span id="active-filter-summary">All Categories</span>
-          <button type="button" class="btn btn-sm btn-outline" id="btn-random-from-results" title="Pick a random quote from the current filtered results">
-            🎲 Random from Results
-          </button>
+          <div class="grid-toolbar-actions">
+            <button type="button" class="btn btn-sm btn-outline" id="btn-export-csv" title="Export matching quotes to CSV">
+              📥 Export to CSV
+            </button>
+            <button type="button" class="btn btn-sm btn-outline" id="btn-random-from-results" title="Pick a random quote from the current filtered results">
+              🎲 Random from Results
+            </button>
+          </div>
         </div>
 
         <div class="quotes-grid" id="quotes-grid">

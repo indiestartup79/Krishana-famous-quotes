@@ -39,6 +39,7 @@
     
     resultsCount: document.getElementById('results-count'),
     activeFilterSummary: document.getElementById('active-filter-summary'),
+    btnExportCsv: document.getElementById('btn-export-csv'),
     btnRandomFromResults: document.getElementById('btn-random-from-results'),
     quotesGrid: document.getElementById('quotes-grid'),
     emptyState: document.getElementById('empty-state'),
@@ -191,12 +192,14 @@
       el.emptyState.hidden = false;
       el.resultsCount.textContent = '0 quotes found';
       el.btnRandomFromResults.disabled = true;
+      if (el.btnExportCsv) el.btnExportCsv.disabled = true;
       return;
     }
 
     el.quotesGrid.hidden = false;
     el.emptyState.hidden = true;
     el.btnRandomFromResults.disabled = false;
+    if (el.btnExportCsv) el.btnExportCsv.disabled = false;
     el.resultsCount.textContent = `Showing ${quotes.length} quote${quotes.length === 1 ? '' : 's'}`;
 
     const fragment = document.createDocumentFragment();
@@ -215,15 +218,21 @@
         </blockquote>
         <div class="card-bottom">
           <span class="card-author-name">— ${escapeHtml(quote.author)}</span>
-          <button type="button" class="card-copy-btn" title="Copy this quote">Copy</button>
+          <button type="button" class="card-copy-btn" title="Copy this quote to clipboard">📋 Copy</button>
         </div>
       `;
 
       // Copy button on individual card
       const copyBtn = card.querySelector('.card-copy-btn');
-      copyBtn.addEventListener('click', (e) => {
+      copyBtn.addEventListener('click', async (e) => {
         e.stopPropagation();
-        copyQuoteToClipboard(quote);
+        await copyQuoteToClipboard(quote);
+        copyBtn.textContent = '✓ Copied!';
+        copyBtn.classList.add('copied');
+        setTimeout(() => {
+          copyBtn.textContent = '📋 Copy';
+          copyBtn.classList.remove('copied');
+        }, 1500);
       });
 
       // Clicking card sets it as the hero quote
@@ -304,8 +313,54 @@
     }
   }
 
+  // --- Export to CSV ---
+  function exportToCsv() {
+    const quotesToExport = state.displayedQuotes || [];
+    if (quotesToExport.length === 0) {
+      showToast('No quotes to export.');
+      return;
+    }
+
+    // CSV Header row
+    const headers = ['ID', 'Quote', 'Author', 'Category', 'Tags'];
+
+    // Escape and format CSV rows
+    const rows = quotesToExport.map(q => {
+      const id = q.id;
+      const quote = `"${(q.quote || '').replace(/"/g, '""')}"`;
+      const author = `"${(q.author || '').replace(/"/g, '""')}"`;
+      const category = `"${(q.category || '').replace(/"/g, '""')}"`;
+      const tags = `"${((q.tags || []).join('; ')).replace(/"/g, '""')}"`;
+      return [id, quote, author, category, tags].join(',');
+    });
+
+    // Prepend UTF-8 BOM so Excel opens special characters cleanly
+    const csvContent = '\uFEFF' + [headers.join(','), ...rows].join('\r\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+
+    const categoryTag = state.activeCategory !== 'all' ? state.activeCategory.toLowerCase() : 'all';
+    const dateStr = new Date().toISOString().slice(0, 10);
+    const filename = `quotes-${categoryTag}-${dateStr}.csv`;
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    showToast(`Exported ${quotesToExport.length} quotes to ${filename} 📥`);
+  }
+
   // --- Event Handlers & Bindings ---
   function setupEventListeners() {
+    // Export CSV button
+    if (el.btnExportCsv) {
+      el.btnExportCsv.addEventListener('click', exportToCsv);
+    }
+
     // New Random Quote button
     el.btnNextRandom.addEventListener('click', () => {
       fetchRandomQuote({

@@ -113,5 +113,23 @@ class QuoteverseTestCase(unittest.TestCase):
         total_counted = sum(item["count"] for item in data["authors"])
         self.assertEqual(total_counted, 100)
 
+    def test_export_quotes_csv(self):
+        """Test GET /api/quotes/export returns valid CSV with header and 100 rows."""
+        res = self.client.get("/api/quotes/export")
+        self.assertEqual(res.status_code, 200)
+        self.assertEqual(res.mimetype, "text/csv")
+        csv_text = res.data.decode("utf-8-sig")
+        lines = [line for line in csv_text.strip().split("\r\n") if line]
+        self.assertEqual(len(lines), 101)  # 1 header + 100 quote rows
+        self.assertIn("ID,Quote,Author,Category,Tags", lines[0])
+
+    def test_export_quotes_csv_filtered(self):
+        """Test GET /api/quotes/export with category filter."""
+        res = self.client.get("/api/quotes/export?category=Science")
+        self.assertEqual(res.status_code, 200)
+        csv_text = res.data.decode("utf-8-sig")
+        lines = [line for line in csv_text.strip().split("\r\n") if line]
+        self.assertEqual(len(lines), 11)  # 1 header + 10 science quotes
+
 if __name__ == "__main__":
     unittest.main()

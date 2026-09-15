@@ -539,8 +539,17 @@ kbd {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+.grid-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .quotes-grid {
@@ -609,19 +618,32 @@ kbd {
 }
 
 .card-copy-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-color);
-  color: var(--text-muted);
+  color: var(--text-secondary);
   border-radius: var(--radius-sm);
-  padding: 4px 8px;
-  font-size: 0.75rem;
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .card-copy-btn:hover {
   color: var(--text-primary);
   border-color: var(--accent-primary);
+  background: rgba(99, 102, 241, 0.15);
+  transform: translateY(-1px);
+}
+
+.card-copy-btn.copied {
+  color: #34d399;
+  border-color: #34d399;
+  background: rgba(52, 211, 153, 0.18);
+  font-weight: 600;
 }
 
 /* ==========================================================================

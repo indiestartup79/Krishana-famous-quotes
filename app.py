@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+import csv
+import io
 import json
 import os
 import random
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, Response
 
 app = Flask(__name__)
 
@@ -74,6 +76,47 @@ def get_quotes():
         "total": len(results),
         "quotes": results
     })
+
+@app.route("/api/quotes/export", methods=["GET"])
+def export_quotes_csv():
+    """Exports matching quotes as a downloadable CSV file."""
+    search_query = request.args.get("search", "").strip().lower()
+    category = request.args.get("category", "").strip().lower()
+    author = request.args.get("author", "").strip().lower()
+
+    results = QUOTES
+
+    if category and category != "all":
+        results = [q for q in results if q["category"].lower() == category]
+
+    if author:
+        results = [q for q in results if author in q["author"].lower()]
+
+    if search_query:
+        results = [
+            q for q in results
+            if search_query in q["quote"].lower() or search_query in q["author"].lower()
+        ]
+
+    output = io.StringIO()
+    writer = csv.writer(output)
+    writer.writerow(["ID", "Quote", "Author", "Category", "Tags"])
+    for q in results:
+        writer.writerow([
+            q.get("id"),
+            q.get("quote"),
+            q.get("author"),
+            q.get("category"),
+            "; ".join(q.get("tags", []))
+        ])
+
+    category_slug = category if (category and category != "all") else "all"
+    filename = f"quotes-{category_slug}.csv"
+    return Response(
+        "\ufeff" + output.getvalue(),
+        mimetype="text/csv",
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
 
 @app.route("/api/categories", methods=["GET"])
 def get_categories():

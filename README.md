@@ -34,7 +34,8 @@ A modern, responsive, and lightweight web application that serves a curated coll
 - 🏷️ **Interactive Category Chips**: Filter across 9 categories (*Science, Technology, Philosophy, Wisdom, Leadership, Inspiration, Literature, Art, Life*) with real-time count badges.
 - 👤 **Author Dropdown Filter**: Alphabetically indexed selector displaying all authors and their quote counts.
 - 🎯 **"Random from Results"**: Pick a random quote directly from the active search or category filtered results.
-- 📋 **One-Click Clipboard Copy**: Formatted quote copying (`"quote" — Author`) with toast alert confirmation.
+- 📋 **One-Click Clipboard Copy**: "📋 Copy" button on every individual quote card and the hero showcase with animated `✓ Copied!` state feedback and toast notifications.
+- 📥 **Export to CSV**: Export all 100 quotes or the currently filtered/searched results to a UTF-8 BOM CSV file (compatible with Excel & Google Sheets) with one click.
 - 🐦 **Social Sharing**: One-click sharing to Twitter / X.
 - 📱 **Glassmorphic Responsive UI**: Mobile-first design with modern blur effects, dark mode aesthetic, and accessible focus outlines.
 
@@ -217,6 +218,15 @@ A modern, responsive, and lightweight web application that serves a curated coll
     ]
   }
   ```
+
+### 5. Export Quotes as CSV
+- **URL**: `/api/quotes/export`
+- **Method**: `GET`
+- **Query Parameters**:
+  - `search` *(optional)*: Filter export by search term
+  - `category` *(optional)*: Filter export by category
+  - `author` *(optional)*: Filter export by author
+- **Response**: Downloadable `text/csv` attachment with UTF-8 BOM encoding.
 
 ---
 
